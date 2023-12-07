@@ -8,7 +8,7 @@ public class Fahrer {
     public Fahrer(String name, int alter){
         setName(name);
         setAlter(alter);
-        setFuehrerscheine(new ArrayList<Fuehrerscheine>());
+        setFuehrerscheine(new ArrayList<Fuehrerschein>());
     }
 
     public void addFuehrerschein(Fuehrerschein fuehrerschein){
@@ -22,7 +22,13 @@ public class Fahrer {
         return name;
     }
 
-    public ArrayList<> getFuehrerscheine(){
+    ArrayList<Fuehrerschein> fuehrerscheine = new ArrayList<>();
+
+    public void setFuehrerscheine(ArrayList<Fuehrerschein> fuehrerscheine) {
+        this.fuehrerscheine = fuehrerscheine;
+    }
+
+    public ArrayList<Fuehrerschein> getFuehrerscheine(){
         return fuehrerscheine;
     }
 

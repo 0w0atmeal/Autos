@@ -14,5 +14,7 @@ public class Pkw extends Auto{
         return isofix;
     }
 
-    public void getInfo
+    public String getInfo() {
+        return farbe + reifen + baujahr + kraftstoff + marke + ps;
+    }
 }
